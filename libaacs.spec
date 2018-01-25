@@ -37,6 +37,7 @@ applications that use %{name}.
 
 %prep
 %autosetup -p1
+cp %{SOURCE1} .
 
 %build
 autoreconf -vif
@@ -46,7 +47,7 @@ autoreconf -vif
 %install
 %make_install
 find %{buildroot} -name "*.la" -delete
-mkdir -p /etc/xdg/aacs
+mkdir -p %{buildroot}%{_sysconfdir}/xdg/aacs
 
 %post -p /sbin/ldconfig
 
