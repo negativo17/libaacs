@@ -1,0 +1,16 @@
+AACS keys
+---------
+
+The library requires AACS keys to be available on the system in the following
+locations:
+
+~/.config/aacs
+/etc/xdg/aacs
+
+You can find information on some of the keys here:
+https://vlc-bluray.whoknowsmy.name
+
+Short command line example:
+
+mkdir -p ~/.config/aacs
+wget -c http://vlc-bluray.whoknowsmy.name/files/KEYDB.cfg -O ~/.config/aacs/KEYDB.cfg
